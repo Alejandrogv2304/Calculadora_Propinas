@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# 🧾 Calculadora de Propinas  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación desarrollada con **React**, **Tailwind CSS** y **TypeScript**. Su propósito es ofrecer una experiencia interactiva para calcular el total de una cuenta en un restaurante, incluyendo la propina.  
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Selección de platillos**: Una carta interactiva para elegir los platillos y calcular el total automáticamente.  
+- **Cálculo de propina**: Posibilidad de agregar un porcentaje de propina al subtotal.  
+- **Cálculo dinámico del total**: El total a pagar se actualiza automáticamente al seleccionar platillos o cambiar la propina.  
+- **Interfaz moderna**: Diseñada con **Tailwind CSS** para lograr un estilo limpio, moderno y responsive.  
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: Biblioteca para construir la interfaz de usuario.  
+- **Tailwind CSS**: Framework de CSS para el diseño visual.  
+- **TypeScript**: Lenguaje para agregar tipado estático a JavaScript, mejorando la productividad y reduciendo errores.  
 
-- Configure the top-level `parserOptions` property like this:
+## 📚 Aprendizajes  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Durante el desarrollo de esta aplicación, me familiaricé y profundicé en conceptos importantes:  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Hooks de React**:  
+  - **useState**: Manejo del estado para actualizar dinámicamente los valores seleccionados.  
+  - **useMemo**: Optimización de cálculos para evitar operaciones innecesarias al renderizar.  
+  - **useCallback**: Creación de funciones memoizadas para mejorar el rendimiento.  
+  - Diferencias y mejores prácticas para usar estos hooks según el caso.  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **TypeScript**:  
+  - Uso de `types` e `interfaces` para definir estructuras de datos.  
+  - Ventajas como la autocompletación, detección temprana de errores y documentación más clara del código.  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **Tailwind CSS**:  
+  - Cómo diseñar componentes visuales rápidamente utilizando clases utilitarias.  
+  - Estilización responsive para garantizar una experiencia consistente en dispositivos móviles y de escritorio.  
+
